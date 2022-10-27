@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>Tugas Pemrograman Web 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    <body>
+        <div class="wrap">
+        <div class="container">
+            <form action="#" method="POST" onSubmit="validasi()">
+            <tr>
+                <td><colspan="3" align="center">
+                <h2><center>FORM REGISTRASI</center></h2>
+                <table border="0" align="center">
+            </tr>1          
+            <tr> 
+                <td>Nama Lengkap</td>
+                <td>:</td>
+                <td><input type:"text" required name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>alamat</td>
+                <td>:</td>
+                <td><input type:"text" required name="alamat" id="alamat " /></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>:</td>
+                <td><input type="date" required name="tanggal_lahir"></td>
+            </tr>
+            <tr>
+                <td>jenis kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="pria">pria
+                    <input type="radio" name="jenis_kelamin" value="wanita">wanita
+                </td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td>:</td>
+                <td><input type="text" required name="Username" size="20">
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="Password" required name="Password">
+                </td>
+
+            </tr>
+            <tr>
+                <td>Foto</td>
+                <td>:</td>
+                <td><input type="file" name="Gambar"></td>
+            </tr>
+            <td colspan="3">
+                    <input type="submit" value="simpan" class="tombol" />
+                    <input type="reset" value="reset"/>
+                </td>
+            </form>
+    </div>
+    </body>
+    <script> function validasi() {
+    var depan = document.getElementById("depan").value;
+    var belakang = document.getElementById("belakang").value;
+    var alamat = document.getElementById("alamat").value;
+    if (depan != "" && belakang!="" && alamat !="" ) {
+        return true;
+    }else{
+        alert('Isi Data Dengan Lengkap Yah!');
+    }
+}</script>
+    <script src="scriptt.js"></script>
+</html>
